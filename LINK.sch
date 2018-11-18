@@ -158,22 +158,6 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 8500 3700 50  0001 C
 	1    8500 3600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:AP2204K-1.5 U1
-U 1 1 5BEED06E
-P 7450 1950
-F 0 "U1" H 7450 2292 50  0000 C CNN
-F 1 "AP2204K-1.5" H 7450 2201 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7450 2275 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 7450 2050 50  0001 C CNN
-	1    7450 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 1850 7150 1950
-Connection ~ 7150 1950
-Wire Wire Line
-	7150 1950 7150 2400
 Connection ~ 7150 2700
 Wire Wire Line
 	7150 2700 7150 2800
@@ -199,8 +183,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 3500 8200 3600
 Connection ~ 8200 1950
-Text GLabel 7750 1850 2    50   Input ~ 0
-1V5
 Text GLabel 7750 2700 2    50   Input ~ 0
 2V5
 Text GLabel 7750 3500 2    50   Input ~ 0
@@ -212,21 +194,18 @@ Text GLabel 8800 2700 2    50   Input ~ 0
 Text GLabel 8800 3500 2    50   Input ~ 0
 3V3
 $Comp
-L Connector_Generic:Conn_02x07_Odd_Even J5
+L Connector_Generic:Conn_02x06_Odd_Even J5
 U 1 1 5BEED82B
 P 10300 2850
 F 0 "J5" H 10350 3367 50  0000 C CNN
 F 1 "Conn_02x07_Counter_Clockwise" H 10350 3276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 10300 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 10300 2850 50  0001 C CNN
 F 3 "~" H 10300 2850 50  0001 C CNN
 	1    10300 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 2550 10600 2650
-Wire Wire Line
 	10600 2750 10600 2650
-Connection ~ 10600 2650
 Wire Wire Line
 	10600 2850 10600 2750
 Connection ~ 10600 2750
@@ -239,8 +218,6 @@ Wire Wire Line
 Wire Wire Line
 	10600 2950 10600 3050
 Connection ~ 10600 2950
-Text GLabel 10100 2550 0    50   Input ~ 0
-1V5
 Text GLabel 10100 2650 0    50   Input ~ 0
 1V8
 Text GLabel 10100 2750 0    50   Input ~ 0
@@ -284,9 +261,6 @@ Wire Wire Line
 	7950 3100 8500 3100
 Wire Wire Line
 	7950 3100 7950 2250
-Wire Wire Line
-	7450 2250 7950 2250
-Connection ~ 7950 2250
 Wire Wire Line
 	7950 2250 8500 2250
 $Comp
@@ -356,7 +330,7 @@ F 3 "~" H 9800 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 10000 1100 2    50   Input ~ 0
-VDD
+VTref
 Text GLabel 10000 1200 2    50   Input ~ 0
 TX
 Text GLabel 10000 1300 2    50   Input ~ 0
@@ -447,7 +421,7 @@ GND
 Text GLabel 9100 1300 2    50   Input ~ 0
 TCK
 Text GLabel 9100 1400 2    50   Input ~ 0
-VDD
+VTref
 Wire Wire Line
 	10850 2850 10600 2850
 Text GLabel 7050 2400 0    50   Input ~ 0
@@ -487,4 +461,27 @@ Text GLabel 9750 5300 2    50   Input ~ 0
 nSRST
 Text Notes 9150 5850 0    50   ~ 0
 check pinout
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J7
+U 1 1 5BF1A9DD
+P 7600 1250
+F 0 "J7" H 7650 1567 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 7650 1476 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7600 1250 50  0001 C CNN
+F 3 "~" H 7600 1250 50  0001 C CNN
+	1    7600 1250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7400 1150 0    50   Input ~ 0
+VTref
+Text GLabel 7400 1250 0    50   Input ~ 0
+nSRST
+Text GLabel 7400 1350 0    50   Input ~ 0
+GND
+Text GLabel 7900 1150 2    50   Input ~ 0
+TMS
+Text GLabel 7900 1250 2    50   Input ~ 0
+TCK
+Text GLabel 7900 1350 2    50   Input ~ 0
+TDO
 $EndSCHEMATC
