@@ -104,96 +104,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 1500 3750 1500
 $Comp
-L Regulator_Linear:AP2204K-1.8 U4
-U 1 1 5BEEC9A1
-P 8500 1950
-F 0 "U4" H 8500 2292 50  0000 C CNN
-F 1 "AP2204K-1.8" H 8500 2201 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8500 2275 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 8500 2050 50  0001 C CNN
-	1    8500 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:AP2204K-2.5 U2
-U 1 1 5BEECBEC
-P 7450 2800
-F 0 "U2" H 7450 3142 50  0000 C CNN
-F 1 "AP2204K-2.5" H 7450 3051 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7450 3125 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 7450 2900 50  0001 C CNN
-	1    7450 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:AP2204K-2.8 U5
-U 1 1 5BEECCC7
-P 8500 2800
-F 0 "U5" H 8500 3142 50  0000 C CNN
-F 1 "AP2204K-2.8" H 8500 3051 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8500 3125 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 8500 2900 50  0001 C CNN
-	1    8500 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:AP2204K-3.0 U3
-U 1 1 5BEECD9D
-P 7450 3600
-F 0 "U3" H 7450 3942 50  0000 C CNN
-F 1 "AP2204K-3.0" H 7450 3851 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 7450 3925 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 7450 3700 50  0001 C CNN
-	1    7450 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:AP2204K-3.3 U6
-U 1 1 5BEECE60
-P 8500 3600
-F 0 "U6" H 8500 3942 50  0000 C CNN
-F 1 "AP2204K-3.3" H 8500 3851 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8500 3925 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/AP2204.pdf" H 8500 3700 50  0001 C CNN
-	1    8500 3600
-	1    0    0    -1  
-$EndComp
-Connection ~ 7150 2700
-Wire Wire Line
-	7150 2700 7150 2800
-Wire Wire Line
-	7150 3600 7150 3500
-Wire Wire Line
-	7150 3500 7150 2800
-Connection ~ 7150 3500
-Connection ~ 7150 2800
-Wire Wire Line
-	8200 1850 8200 1950
-Wire Wire Line
-	8200 2800 8200 2700
-Connection ~ 8200 2700
-Wire Wire Line
-	8200 2800 8200 3500
-Connection ~ 8200 2800
-Connection ~ 8200 3500
-Wire Wire Line
-	8500 3900 7950 3900
-Wire Wire Line
-	8200 1950 8200 2400
-Wire Wire Line
-	8200 3500 8200 3600
-Connection ~ 8200 1950
-Text GLabel 7750 2700 2    50   Input ~ 0
-2V5
-Text GLabel 7750 3500 2    50   Input ~ 0
-3V0
-Text GLabel 8800 1850 2    50   Input ~ 0
-1V8
-Text GLabel 8800 2700 2    50   Input ~ 0
-2V8
-Text GLabel 8800 3500 2    50   Input ~ 0
-3V3
-$Comp
 L Connector_Generic:Conn_02x06_Odd_Even J5
 U 1 1 5BEED82B
 P 10300 2850
@@ -236,33 +146,6 @@ Text GLabel 9800 3700 1    50   Input ~ 0
 5V
 Text GLabel 10150 3750 1    50   Input ~ 0
 VTref
-$Comp
-L power:GND #PWR0101
-U 1 1 5BEEE275
-P 7950 3950
-F 0 "#PWR0101" H 7950 3700 50  0001 C CNN
-F 1 "GND" H 7955 3777 50  0000 C CNN
-F 2 "" H 7950 3950 50  0001 C CNN
-F 3 "" H 7950 3950 50  0001 C CNN
-	1    7950 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 3950 7950 3900
-Connection ~ 7950 3900
-Wire Wire Line
-	7950 3900 7450 3900
-Wire Wire Line
-	7950 3900 7950 3100
-Wire Wire Line
-	7450 3100 7950 3100
-Connection ~ 7950 3100
-Wire Wire Line
-	7950 3100 8500 3100
-Wire Wire Line
-	7950 3100 7950 2250
-Wire Wire Line
-	7950 2250 8500 2250
 $Comp
 L power:GND #PWR0102
 U 1 1 5BEEE9BF
@@ -424,18 +307,6 @@ Text GLabel 9100 1400 2    50   Input ~ 0
 VTref
 Wire Wire Line
 	10850 2850 10600 2850
-Text GLabel 7050 2400 0    50   Input ~ 0
-5V
-Wire Wire Line
-	7050 2400 7150 2400
-Connection ~ 7150 2400
-Wire Wire Line
-	7150 2400 7150 2700
-Wire Wire Line
-	7150 2400 8200 2400
-Connection ~ 8200 2400
-Wire Wire Line
-	8200 2400 8200 2700
 $Comp
 L Connector:RJ12 J6
 U 1 1 5BEEEA17
@@ -484,4 +355,134 @@ Text GLabel 7900 1250 2    50   Input ~ 0
 TCK
 Text GLabel 7900 1350 2    50   Input ~ 0
 TDO
+$Comp
+L Regulator_Linear:MCP1700-1802E_SOT23 U1
+U 1 1 5BF4B01F
+P 2350 2850
+F 0 "U1" H 2350 3092 50  0000 C CNN
+F 1 "MCP1700-1802E_SOT23" H 2350 3001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 3075 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 2350 2850 50  0001 C CNN
+	1    2350 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1700-2502E_SOT23 U2
+U 1 1 5BF4B173
+P 2350 3900
+F 0 "U2" H 2350 4142 50  0000 C CNN
+F 1 "MCP1700-2502E_SOT23" H 2350 4051 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 4125 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 2350 3900 50  0001 C CNN
+	1    2350 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1700-2802E_SOT23 U3
+U 1 1 5BF4B275
+P 2350 5150
+F 0 "U3" H 2350 5392 50  0000 C CNN
+F 1 "MCP1700-2802E_SOT23" H 2350 5301 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2350 5375 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 2350 5150 50  0001 C CNN
+	1    2350 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1700-3002E_SOT23 U4
+U 1 1 5BF4B36F
+P 3950 2850
+F 0 "U4" H 3950 3092 50  0000 C CNN
+F 1 "MCP1700-3002E_SOT23" H 3950 3001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3950 3075 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 3950 2850 50  0001 C CNN
+	1    3950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U5
+U 1 1 5BF4B466
+P 3850 4300
+F 0 "U5" H 3850 4542 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 3850 4451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3850 4525 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826C.pdf" H 3850 4300 50  0001 C CNN
+	1    3850 4300
+	1    0    0    -1  
+$EndComp
+Text GLabel 2050 2850 0    50   Input ~ 0
+5V
+Text GLabel 2050 3900 0    50   Input ~ 0
+5V
+Text GLabel 3650 2850 0    50   Input ~ 0
+5V
+Text GLabel 3550 4300 0    50   Input ~ 0
+5V
+Text GLabel 2050 5150 0    50   Input ~ 0
+5V
+Text GLabel 2650 2850 2    50   Input ~ 0
+1V8
+Text GLabel 4250 2850 2    50   Input ~ 0
+3V0
+Text GLabel 2650 3900 2    50   Input ~ 0
+2V5
+Text GLabel 2650 5150 2    50   Input ~ 0
+2V8
+Text GLabel 4150 4300 2    50   Input ~ 0
+3V3
+$Comp
+L power:GND #PWR?
+U 1 1 5BF4C392
+P 2350 5450
+F 0 "#PWR?" H 2350 5200 50  0001 C CNN
+F 1 "GND" H 2355 5277 50  0000 C CNN
+F 2 "" H 2350 5450 50  0001 C CNN
+F 3 "" H 2350 5450 50  0001 C CNN
+	1    2350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF4C3E5
+P 3850 4600
+F 0 "#PWR?" H 3850 4350 50  0001 C CNN
+F 1 "GND" H 3855 4427 50  0000 C CNN
+F 2 "" H 3850 4600 50  0001 C CNN
+F 3 "" H 3850 4600 50  0001 C CNN
+	1    3850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF4C414
+P 2350 4200
+F 0 "#PWR?" H 2350 3950 50  0001 C CNN
+F 1 "GND" H 2355 4027 50  0000 C CNN
+F 2 "" H 2350 4200 50  0001 C CNN
+F 3 "" H 2350 4200 50  0001 C CNN
+	1    2350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF4C455
+P 2350 3150
+F 0 "#PWR?" H 2350 2900 50  0001 C CNN
+F 1 "GND" H 2355 2977 50  0000 C CNN
+F 2 "" H 2350 3150 50  0001 C CNN
+F 3 "" H 2350 3150 50  0001 C CNN
+	1    2350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BF4C4CC
+P 3950 3150
+F 0 "#PWR?" H 3950 2900 50  0001 C CNN
+F 1 "GND" H 3955 2977 50  0000 C CNN
+F 2 "" H 3950 3150 50  0001 C CNN
+F 3 "" H 3950 3150 50  0001 C CNN
+	1    3950 3150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
