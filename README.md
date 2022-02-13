@@ -4,6 +4,8 @@ Debug Adapters (JTAG/SWD) for various debuggers and cables
 Dongles
 -------
 
+A number of adapters for various dongles to the 1.27mm 10 pin "Cortex" debugger connector.
+
 Adapters for various Debug dongles:
 
 * ST-Link SWDIO - GND - SWDCLK - 3V3 - 5V
@@ -16,6 +18,13 @@ Adapters for various Debug dongles:
 -----------
 
 Standard 20 Pin JTAG, as found on J-Link, ST-Link, etc.
+
+This adapter boards allows to connect:
+* "Cortex" debugger connector
+* 6 pin SWD (for tag connect)
+* RJ-12 SWD (for tag connect)
+* SWD PIN Header
+* UART PIN header
 
 On a J-Link V9+, when using SWD, it offers a UART. 
 For this a UART header is offered. Take note that 
