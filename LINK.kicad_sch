@@ -1621,7 +1621,7 @@
     (uuid 00000000-0000-0000-0000-00005beeea17)
     (property "Reference" "J6" (id 0) (at 186.817 65.6082 0))
     (property "Value" "RJ12" (id 1) (at 186.817 67.9196 0))
-    (property "Footprint" "AvS_Connector:RJ11" (id 2) (at 185.42 79.375 90)
+    (property "Footprint" "AvS_Connector:RJ12" (id 2) (at 185.42 79.375 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 185.42 79.375 90)
@@ -2091,7 +2091,7 @@
       (reference "J5") (unit 1) (value "Conn_02x05_Odd_Even") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005beeea17"
-      (reference "J6") (unit 1) (value "RJ12") (footprint "AvS_Connector:RJ11")
+      (reference "J6") (unit 1) (value "RJ12") (footprint "AvS_Connector:RJ12")
     )
     (path "/00000000-0000-0000-0000-00005bf1a9dd"
       (reference "J7") (unit 1) (value "Conn_02x03_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical")
