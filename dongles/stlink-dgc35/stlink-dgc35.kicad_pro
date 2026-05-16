@@ -495,7 +495,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "BL.kicad_pro",
+    "filename": "stlink-dgc35.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -532,7 +532,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerber/DGC35_v2.0",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -652,9 +652,9 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "BL.kicad_sch",
-        "name": "BL",
-        "uuid": "5ef9eeb2-3c15-436c-998c-18bd55235177"
+        "filename": "stlink-dgc35.kicad_sch",
+        "name": "stlink-dgc35",
+        "uuid": "8039d813-f5ff-41aa-b0b3-b7ff36c564e6"
       }
     ],
     "used_designators": "J3",
@@ -662,8 +662,8 @@
   },
   "sheets": [
     [
-      "5ef9eeb2-3c15-436c-998c-18bd55235177",
-      "BL"
+      "8039d813-f5ff-41aa-b0b3-b7ff36c564e6",
+      "ST1"
     ]
   ],
   "text_variables": {},
